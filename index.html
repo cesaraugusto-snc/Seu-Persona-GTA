@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Compativel com celulares e computadores.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Seu Persona GTA</title>
+</head>
+
+<body>
+    <p class="nome">Lucia</p>
+
+    <img class="personagem" src="img/lucia.png" alt="Personagem Lucia">
+
+    <aside class="textos">
+        <p class="etiqueta">Selecione o seu Personagem</p>
+        <h1>Não é só <br>um jogo.</h1>
+        <p class="texto-apoio">Escolha uma lenda de Dev City. Ou tire uma selfie e vire uma.</p>
+    </aside>
+    <aside class="menu">
+
+        <img onclick="escolherPersonagem('Lucia', 'img/Lucia.png', '#ff3cac')" class="avatar" src="img/lucia.png">
+
+        <img onclick="escolherPersonagem('jason', 'img/jason.png', '#00b2c9')" class="avatar" src="img/jason.png">
+
+        <img onclick="escolherPersonagem('CJ', 'img/cj.png', '#7ed37e')" class="avatar" src="img/cj.png">
+
+        <label class="voce"> 📸
+
+            <!-- file(arquivos) accept(aceita) imagem/todas
+                hidden (escondido)
+                change (quando mudar algo, faça algo)
+                ths (isso aqui) - tudo que tem no input e enviar 
+                onchange() = quando cliacar em algo, faça algo
+                onload() = quando carregar algo, faça algo
+            -->
+            <input type="file" accept="image/*" hidden onchange="lerFoto(this)">
+        </label>
+
+    </aside>
+</body>
+<script src="https://js.puter.com/v2/"></script>
+<script src="scripts.js"></script>
+
+</html>
